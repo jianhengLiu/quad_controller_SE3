@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find mavros)/launch/px4.launch"/>
+
+    <node pkg="main_controller" type="show_status_node" name="show_status_node" output="screen">
+    </node>
+</launch>
+
+
+

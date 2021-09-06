@@ -1,0 +1,6 @@
+
+<launch>
+    <rosparam   command="load" file="$(find poly_traj_utils)/config/traj_opt.yaml"/>
+    <node pkg="rviz" type="rviz" name="obvp_test" args="-d $(find poly_traj_utils)/config/opt_test.rviz"/>
+    <node pkg="poly_traj_utils" type="poly_utils_test" name="poly_utils_test" />
+</launch>

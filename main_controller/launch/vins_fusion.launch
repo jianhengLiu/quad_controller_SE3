@@ -1,0 +1,13 @@
+<launch>
+    <rosparam command="load" file="$(find main_controller)/cfg/default.yaml"/>
+
+    <arg name="server" default="localhost"/>
+    <node pkg="main_controller" type="main_fsm_node" name="main_fsm_node" output="screen">
+    </node>
+
+    <node pkg="main_controller" type="vinsfusion_remap_node" name="vinsfusion_remap_node" output="screen">
+    </node>
+</launch>
+
+
+

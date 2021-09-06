@@ -1,0 +1,16 @@
+/k_position/x: 12.0
+/k_position/y: 12.0
+/k_position/z: 12.0
+/k_velocity/x: 8.0
+/k_velocity/y: 8.0
+/k_velocity/z: 8.0
+
+/k_integral: 4
+
+/k_thrust: 0.0245
+
+/takeoff_pose/x: 0.0
+/takeoff_pose/y: 0.0
+/takeoff_pose/z: 0.5
+
+/mass: 2.0

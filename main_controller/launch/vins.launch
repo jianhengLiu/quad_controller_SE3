@@ -1,0 +1,18 @@
+<launch>
+    <!--    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find main_controller)/config/default.rviz"/>-->
+
+    <rosparam command="load" file="$(find main_controller)/cfg/default.yaml"/>
+
+    <arg name="server" default="localhost"/>
+    <node pkg="main_controller" type="main_fsm_node" name="main_fsm_node" output="screen">
+    </node>
+
+<!--    <node pkg="main_controller" type="viconRemap" name="viconRemap" output="screen">-->
+    <!--<node pkg="main_controller" type="vinsfusion_remap_node" name="vinsfusion_remap_node" output="screen">-->
+        <!--    <node pkg="main_controller" type="rs_remap_odom_node" name="rs_remap_odom_node" output="screen">-->
+            <node pkg="main_controller" type="rs_remap" name="rs_remap" output="screen">
+    </node>
+</launch>
+
+
+
