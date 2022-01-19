@@ -1,0 +1,11 @@
+ctrl_freq_max: 100
+
+takeoff_pose:
+  pos_x: 0
+  pos_y: 0
+  pos_z: 0.5
+  att_x: 0
+  att_y: 0
+  att_z: 0
+  att_w: 1
+
